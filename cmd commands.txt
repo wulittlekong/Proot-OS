@@ -1,5 +1,11 @@
+ssh wulittlekong030@prootnetwork
 
+# trying some built in demos
 cd rpi-rgb-led-matrix/examples-api-use
 sudo ./demo -D 0 --led-rows=32 --led-cols=64 --led-gpio-mapping=adafruit-hat --led-slowdown-gpio=60
 
-sudo $(which python3) sample_test.py /pi/wulittlekong030/rpi-rgb-led-matrix/media/EyeRedLeft.png 
+sudo ./demo -D 7 --led-rows=32 --led-cols=64 --led-gpio-mapping=adafruit-hat --led-slowdown-gpio=60
+
+# trying with custom images
+cd rpi-rgb-led-matrix/bindings/python/samples
+sudo $(which python3) display_test.py /home/wulittlekong030/rpi-rgb-led-matrix/media/EyeRedLeft.png
