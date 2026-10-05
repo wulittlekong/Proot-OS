@@ -1,4 +1,8 @@
+# connections and OS commands
+
+cls
 ssh wulittlekong030@prootnetwork
+sudo shutdown -h now
 
 # trying some built in demos
 cd rpi-rgb-led-matrix/examples-api-use
