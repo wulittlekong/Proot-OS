@@ -1,15 +1,20 @@
 # connections and OS commands
-
-cls
+clear
 ssh wulittlekong030@prootnetwork
 sudo shutdown -h now
+
+# refreshing git folders
+cd Proot-OS
+git pull
 
 # trying some built in demos
 cd rpi-rgb-led-matrix/examples-api-use
 sudo ./demo -D 0 --led-rows=32 --led-cols=64 --led-gpio-mapping=adafruit-hat --led-slowdown-gpio=60
 
-sudo ./demo -D 7 --led-rows=32 --led-cols=64 --led-gpio-mapping=adafruit-hat --led-slowdown-gpio=60
+sudo ./demo -D 13 --led-rows=32 --led-cols=64 --led-gpio-mapping=adafruit-hat --led-slowdown-gpio=2
 
 # trying with custom images
 cd rpi-rgb-led-matrix/bindings/python/samples
 sudo $(which python3) display_test.py /home/wulittlekong030/rpi-rgb-led-matrix/media/EyeRedLeft.png
+sudo $(which python3) display_test.py /home/wulittlekong030/rpi-rgb-led-matrix/media/EyeRedLeft2.png
+sudo $(which python3) Display_image.py /home/wulittlekong030/rpi-rgb-led-matrix/media/EyeRedNormalBlink.gif

@@ -17,6 +17,7 @@ options.parallel = 1
 options.hardware_mapping = 'adafruit-hat'
 options.gpio_slowdown = 2
 options.brightness=100
+options.led_rgb_sequence = 'rbg'
 
 matrix = RGBMatrix(options = options)
 
